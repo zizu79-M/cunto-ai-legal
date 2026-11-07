@@ -1,14 +1,124 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cunto AI – Snap your food, get the calories</title><link rel="stylesheet" href="style.css"></head>
-<body><main>
-<h1>Cunto AI</h1>
-<p class="meta">Snap your food. Get the calories instantly.</p>
-<p>Cunto AI recognises any dish from a photo, a barcode or a short description, and tracks your calories, protein, carbs and fat against a plan built for you. Available in English, Somali, Swahili, Amharic, French and Arabic.</p>
-<p>Coming soon to the App Store.</p>
-<h2>Support</h2>
-<p>Questions or feedback: <a href="mailto:support@cuntoai.app">support@cuntoai.app</a></p>
-<h2>Legal</h2>
-<ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li></ul>
-</main></body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cunto AI – Snap your food, get the calories</title>
+<meta name="description" content="Cunto AI recognises any dish from a photo, a barcode or a few words, and tracks calories, protein, carbs and fat against a plan built for you. In English, Somali, Swahili, Amharic, French and Arabic.">
+<meta property="og:title" content="Cunto AI – Snap your food, get the calories">
+<meta property="og:description" content="Photo calorie tracking for any dish from any cuisine. Six languages.">
+<meta property="og:url" content="https://cuntoai.app/">
+<meta name="theme-color" content="#141414">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="/"><img src="favicon.svg" alt=""> Cunto AI</a>
+  <nav class="navlinks"><a href="#features" data-i="navFeatures">Features</a><a href="#how" data-i="navHow">How it works</a><a href="#languages" data-i="navLang">Languages</a><a href="mailto:support@cuntoai.app" data-i="navSupport">Support</a></nav>
+  <select class="lang" id="lang" aria-label="Language">
+    <option value="en">English</option><option value="so">Somali</option><option value="sw">Swahili</option><option value="am">Amharic</option><option value="fr">French</option><option value="ar">Arabic</option>
+  </select>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1 data-i="headline">Snap your food. Get the calories instantly.</h1>
+      <p class="lead" data-i="sub">Works with any dish from any cuisine — home-cooked, restaurant or packaged. Cunto AI recognises it from a photo and tracks calories, protein, carbs and fat against a plan built for you.</p>
+      <div class="cta">
+        <a class="btn" href="#notify" data-i="cta">Coming soon to the App Store</a>
+        <span class="soon" data-i="trust">Free 3-day trial · Cancel anytime</span>
+      </div>
+      <div class="ways">
+        <span class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V6a2 2 0 012-2h3M15 4h3a2 2 0 012 2v3M20 15v3a2 2 0 01-2 2h-3M9 20H6a2 2 0 01-2-2v-3"/><circle cx="12" cy="12" r="3"/></svg><span data-i="wayScan">Scan food</span></span>
+        <span class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6v12M8 6v12M11 6v12M14 6v12M17 6v12M20 6v12"/></svg><span data-i="wayBarcode">Barcode</span></span>
+        <span class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4.5-1 10-10a2.1 2.1 0 00-3-3l-10 10L4 20zM13.5 7.5l3 3"/></svg><span data-i="wayDescribe">Describe it</span></span>
+      </div>
+    </div>
+    <div class="phone" aria-hidden="true"><div class="screen">
+      <div class="s-top"><span>Cunto AI</span><span class="streak">🔥 5</span></div>
+      <div class="s-card"><div><div class="s-num">1,150</div><div class="s-lab" data-i="mockLeft">Calories left</div></div><div class="ring"><i>🔥</i></div></div>
+      <div class="s-macros">
+        <div class="s-macro"><b>38g</b><span data-i="mockProtein">Protein</span><div class="bar"><span style="width:28%;background:#D64545"></span></div></div>
+        <div class="s-macro"><b>90g</b><span data-i="mockCarbs">Carbs</span><div class="bar"><span style="width:47%;background:#E08A2E"></span></div></div>
+        <div class="s-macro"><b>26g</b><span data-i="mockFat">Fat</span><div class="bar"><span style="width:41%;background:#3B7DD8"></span></div></div>
+      </div>
+      <div class="s-meal"><div class="pic">🍛</div><div><b data-i="mockMeal">Rice with meat</b><small>750 kcal · 12:40</small></div></div>
+      <div class="s-meal"><div class="pic" style="background:linear-gradient(135deg,#3B7DD8,#1F9D55)">🥗</div><div><b data-i="mockMeal2">Chicken salad</b><small>350 kcal · 19:05</small></div></div>
+      <div class="s-tab"><div class="pill"><span data-i="mockHome">Home</span><span data-i="mockProgress">Progress</span><span data-i="mockSearch">Search</span><span data-i="mockProfile">Profile</span></div><div class="fab">+</div></div>
+    </div></div>
+  </section>
+
+  <section id="features">
+    <h2 data-i="fTitle">Everything you need, nothing you don't</h2>
+    <p class="sub" data-i="fSub">Built to be opened every day: fast to log, clear to read, and honest about the numbers.</p>
+    <div class="grid">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5A1.5 1.5 0 015.5 7h2.3l1.4-2h5.6l1.4 2h2.3A1.5 1.5 0 0120 8.5v9a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg></div><h3 data-i="f1">Photo recognition</h3><p data-i="f1b">Point the camera at your plate. The AI names the dish and estimates calories and macros for the portion it sees.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6v12M8 6v12M11 6v12M14 6v12M17 6v12M20 6v12"/></svg></div><h3 data-i="f2">Barcodes and words</h3><p data-i="f2b">Scan a packaged product, or type what you ate in your own language when there is no photo to take.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/></svg></div><h3 data-i="f3">A plan built for you</h3><p data-i="f3b">Answer seven quick questions and get a daily calorie and macro target that fits your goal and pace.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 16v-4M12 16V8M17 16v-7"/></svg></div><h3 data-i="f4">Progress that motivates</h3><p data-i="f4b">Weight trend, weekly nutrition, a daily streak and badges you unlock along the way.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.6 3.6 5.4 3.6 8.5S14.6 17.9 12 20.5M12 3.5C9.4 6.1 8.4 8.9 8.4 12s1 5.9 3.6 8.5"/></svg></div><h3 data-i="f5">Six languages</h3><p data-i="f5b">English, Somali, Swahili, Amharic, French and Arabic, with numbers and dates formatted the way you expect.</p></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l7 2.5v5.5c0 4.3-2.9 7.6-7 9-4.1-1.4-7-4.7-7-9V6l7-2.5zM9 12l2 2 4-4"/></svg></div><h3 data-i="f6">Private by design</h3><p data-i="f6b">Your data lives on your phone. Create an account only if you want a backup. Delete everything in one tap.</p></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2 data-i="hTitle">How it works</h2>
+    <p class="sub" data-i="hSub">Three steps, about ten seconds.</p>
+    <div class="grid steps">
+      <div class="card"><h3 data-i="h1">Snap</h3><p data-i="h1b">Tap the + button and take a photo of your meal.</p></div>
+      <div class="card"><h3 data-i="h2">Check</h3><p data-i="h2b">See the dish, the calories and the macros. Adjust the servings if needed.</p></div>
+      <div class="card"><h3 data-i="h3">Log</h3><p data-i="h3b">One tap saves it. Your rings update and your streak grows.</p></div>
+    </div>
+  </section>
+
+  <section id="languages">
+    <h2 data-i="lTitle">Made for everyone</h2>
+    <p class="sub" data-i="lSub">Cunto AI speaks your language and knows your food, from jollof and injera to pizza and sushi.</p>
+    <div class="langs"><span>English</span><span>Soomaali</span><span>Kiswahili</span><span>አማርኛ</span><span>Français</span><span>العربية</span></div>
+  </section>
+
+  <section id="notify">
+    <div class="band">
+      <div><h2 data-i="bTitle">Launching soon on iPhone</h2><p data-i="bSub">Want to know when it's out? Send us a note and we'll email you once.</p></div>
+      <a class="btn" href="mailto:support@cuntoai.app?subject=Tell%20me%20when%20Cunto%20AI%20launches" data-i="bCta">Notify me</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <span>© <span id="year"></span> Cunto AI</span>
+  <span><a href="mailto:support@cuntoai.app">support@cuntoai.app</a> · <a href="privacy.html" data-i="privacy">Privacy Policy</a> · <a href="terms.html" data-i="terms">Terms of Use</a></span>
+</div></footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const T = {
+  en: {},
+  so: { navFeatures:'Waxyaabaha', navHow:'Sida uu u shaqeeyo', navLang:'Luqadaha', navSupport:'Taageero', headline:'Sawir cuntadaada. Kaloorida isla markiiba hel.', sub:'Wuxuu ku shaqeeyaa cunto kasta oo dhaqan kasta ah — guriga lagu kariyay, makhaayad ama la baakadeeyay. Cunto AI sawir ayuu ku aqoonsadaa, wuxuuna la socdaa kaloorida, borotiinka, karbada iyo dufanka iyadoo loo eegayo qorshe adiga laguu sameeyay.', cta:'Dhowaan App Store-ka', trust:'3 maalmood oo bilaash ah · Jooji waqti kasta', wayScan:'Sawir cuntada', wayBarcode:'Baarkoodh', wayDescribe:'Qor waxaad cuntay', mockLeft:'Kaloori haray', mockProtein:'Borotiin', mockCarbs:'Karbo', mockFat:'Dufan', mockMeal:'Bariis iyo hilib', mockMeal2:'Saladh digaag', mockHome:'Hoyga', mockProgress:'Horumar', mockSearch:'Raadi', mockProfile:'Aniga', fTitle:'Wax kasta oo aad u baahan tahay, waxba kuma darna', fSub:'Waxaa loo dhisay in maalin kasta la furo: qorid dhakhso ah, akhris cad, iyo tirooyin daacad ah.', f1:'Aqoonsi sawir', f1b:'Kamarada saxankaaga ku jeedi. AI-gu wuxuu magacaabaa cuntada, wuxuuna qiyaasaa kaloorida iyo nafaqada qaddarka uu arko.', f2:'Baarkoodh iyo qoraal', f2b:'Sawir alaab baakad ah, ama luqaddaada ku qor waxaad cuntay marka aan sawir la qaadi karin.', f3:'Qorshe adiga laguu sameeyay', f3b:'Ka jawaab toddoba su’aalood oo dhakhso ah, oo hel hadaf kaloori iyo nafaqo maalinle ah oo ku habboon hadafkaaga.', f4:'Horumar ku dhiirrigeliya', f4b:'Isbeddelka miisaanka, nafaqada toddobaadlaha ah, maalmo isku xiga iyo calaamado aad hesho.', f5:'Lix luqadood', f5b:'Ingiriis, Soomaali, Sawaaxili, Amxaari, Faransiis iyo Carabi, tirooyinka iyo taariikhaha sidaad u filayso.', f6:'Asturnaan asal ah', f6b:'Xogtaadu taleefankaaga ayay ku jirtaa. Akoon samee oo keliya haddii aad rabto kayd. Hal riix ku tirtir wax walba.', hTitle:'Sida uu u shaqeeyo', hSub:'Saddex tallaabo, qiyaastii toban ilbiriqsi.', h1:'Sawir', h1b:'Riix badhanka + oo sawir cuntadaada.', h2:'Hubi', h2b:'Arag cuntada, kaloorida iyo nafaqada. Qaddarka beddel haddii loo baahdo.', h3:'Qor', h3b:'Hal riix ayaa kaydisa. Giraangirahaagu way cusboonaadaan, maalmahaaguna way kordhaan.', lTitle:'Qof walba loo sameeyay', lSub:'Cunto AI luqaddaada ayuu ku hadlaa, cuntadaadana wuu yaqaan, laga bilaabo jollof iyo canjeero ilaa pizza iyo sushi.', bTitle:'Dhowaan iPhone-ka', bSub:'Ma rabtaa in lagu ogeysiiyo marka la sii daayo? Noo soo dir fariin, hal mar ayaan kuu soo iimayl dirnaa.', bCta:'I ogeysii', privacy:'Siyaasadda Asturnaanta', terms:'Shuruudaha Isticmaalka' },
+  sw: { navFeatures:'Vipengele', navHow:'Jinsi inavyofanya kazi', navLang:'Lugha', navSupport:'Usaidizi', headline:'Piga picha ya chakula chako. Pata kalori papo hapo.', sub:'Inafanya kazi na chakula chochote cha aina yoyote — cha nyumbani, mgahawani au kilichofungashwa. Cunto AI inakitambua kutoka kwa picha na kufuatilia kalori, protini, wanga na mafuta kulingana na mpango uliotengenezwa kwa ajili yako.', cta:'Inakuja hivi karibuni App Store', trust:'Jaribio la bure la siku 3 · Ghairi wakati wowote', wayScan:'Skani chakula', wayBarcode:'Msimbopau', wayDescribe:'Eleza', mockLeft:'Kalori zilizobaki', mockProtein:'Protini', mockCarbs:'Wanga', mockFat:'Mafuta', mockMeal:'Wali na nyama', mockMeal2:'Saladi ya kuku', mockHome:'Nyumbani', mockProgress:'Maendeleo', mockSearch:'Tafuta', mockProfile:'Wasifu', fTitle:'Kila unachohitaji, bila ziada', fSub:'Imeundwa kufunguliwa kila siku: haraka kurekodi, rahisi kusoma, na nambari za kuaminika.', f1:'Utambuzi wa picha', f1b:'Elekeza kamera kwenye sahani yako. AI inataja chakula na kukadiria kalori na virutubisho kwa kiasi inachokiona.', f2:'Misimbopau na maneno', f2b:'Skani bidhaa iliyofungashwa, au andika ulichokula kwa lugha yako wakati hakuna picha ya kupiga.', f3:'Mpango uliotengenezwa kwa ajili yako', f3b:'Jibu maswali saba mafupi upate lengo la kila siku la kalori na virutubisho linalolingana na lengo lako.', f4:'Maendeleo yanayohamasisha', f4b:'Mwenendo wa uzito, lishe ya kila wiki, mfululizo wa siku na beji unazofungua njiani.', f5:'Lugha sita', f5b:'Kiingereza, Kisomali, Kiswahili, Kiamhari, Kifaransa na Kiarabu, na nambari na tarehe zilizoandikwa jinsi unavyotarajia.', f6:'Faragha kwa muundo', f6b:'Data yako inakaa kwenye simu yako. Fungua akaunti tu ukitaka nakala rudufu. Futa kila kitu kwa mguso mmoja.', hTitle:'Jinsi inavyofanya kazi', hSub:'Hatua tatu, kama sekunde kumi.', h1:'Piga picha', h1b:'Gusa kitufe cha + na upige picha ya mlo wako.', h2:'Hakiki', h2b:'Ona chakula, kalori na virutubisho. Rekebisha kiasi ikihitajika.', h3:'Rekodi', h3b:'Mguso mmoja unahifadhi. Pete zako zinasasishwa na mfululizo wako unakua.', lTitle:'Imeundwa kwa kila mtu', lSub:'Cunto AI inazungumza lugha yako na inajua chakula chako, kuanzia jollof na injera hadi pizza na sushi.', bTitle:'Inazinduliwa hivi karibuni kwenye iPhone', bSub:'Unataka kujua itakapotoka? Tutumie ujumbe na tutakutumia barua pepe mara moja.', bCta:'Nijulishe', privacy:'Sera ya Faragha', terms:'Masharti ya Matumizi' },
+  am: { navFeatures:'ባህሪያት', navHow:'እንዴት እንደሚሠራ', navLang:'ቋንቋዎች', navSupport:'ድጋፍ', headline:'ምግብዎን ፎቶ ያንሱ። ካሎሪውን ወዲያው ያግኙ።', sub:'ከማንኛውም ምግብና ከማንኛውም ባህል ጋር ይሠራል — የቤት፣ የሬስቶራንት ወይም የታሸገ። Cunto AI ከፎቶ ይለየዋል እና ካሎሪ፣ ፕሮቲን፣ ካርቦሃይድሬትና ስብን ለእርስዎ በተዘጋጀ እቅድ መሠረት ይከታተላል።', cta:'በቅርቡ በ App Store', trust:'የ3 ቀን ነፃ ሙከራ · በማንኛውም ጊዜ ይሰርዙ', wayScan:'ምግብ ይቃኙ', wayBarcode:'ባርኮድ', wayDescribe:'ይግለጹ', mockLeft:'የቀረ ካሎሪ', mockProtein:'ፕሮቲን', mockCarbs:'ካርቦሃይድሬት', mockFat:'ስብ', mockMeal:'ሩዝ ከስጋ ጋር', mockMeal2:'የዶሮ ሰላጣ', mockHome:'መነሻ', mockProgress:'ሂደት', mockSearch:'ፍለጋ', mockProfile:'መገለጫ', fTitle:'የሚያስፈልግዎ ሁሉ፣ ያልተጨመረ ምንም', fSub:'በየቀኑ እንዲከፈት የተሠራ፦ ፈጣን መመዝገብ፣ ግልጽ ንባብ፣ ታማኝ ቁጥሮች።', f1:'የፎቶ ልየታ', f1b:'ካሜራውን ወደ ሳህንዎ ያዙሩ። AI ምግቡን ይሰይማል እና ለሚያየው መጠን ካሎሪና ንጥረ ነገሮችን ይገምታል።', f2:'ባርኮዶችና ቃላት', f2b:'የታሸገ ምርት ይቃኙ፣ ወይም ፎቶ ማንሳት ሳይቻል የበሉትን በቋንቋዎ ይጻፉ።', f3:'ለእርስዎ የተዘጋጀ እቅድ', f3b:'ሰባት ፈጣን ጥያቄዎችን ይመልሱ እና ከግብዎ ጋር የሚስማማ የዕለት ካሎሪና ንጥረ ነገር ግብ ያግኙ።', f4:'የሚያነሳሳ ሂደት', f4b:'የክብደት አዝማሚያ፣ ሳምንታዊ አመጋገብ፣ ተከታታይ ቀናት እና በመንገድ ላይ የሚከፍቷቸው ባጆች።', f5:'ስድስት ቋንቋዎች', f5b:'እንግሊዝኛ፣ ሶማሊኛ፣ ስዋሂሊ፣ አማርኛ፣ ፈረንሳይኛ እና አረብኛ፣ ቁጥሮችና ቀናት እንደሚጠብቁት ተቀርጸው።', f6:'በንድፍ የተጠበቀ ግላዊነት', f6b:'ውሂብዎ በስልክዎ ላይ ይኖራል። ምትኬ ከፈለጉ ብቻ አካውንት ይክፈቱ። ሁሉንም በአንድ ንክኪ ይሰርዙ።', hTitle:'እንዴት እንደሚሠራ', hSub:'ሶስት ደረጃዎች፣ ወደ አስር ሰከንድ።', h1:'ፎቶ ያንሱ', h1b:'የ + ቁልፉን ይንኩ እና የምግብዎን ፎቶ ያንሱ።', h2:'ያረጋግጡ', h2b:'ምግቡን፣ ካሎሪውን እና ንጥረ ነገሮቹን ይመልከቱ። ከፈለጉ መጠኑን ያስተካክሉ።', h3:'ይመዝግቡ', h3b:'አንድ ንክኪ ያስቀምጣል። ቀለበቶችዎ ይዘመናሉ እና ተከታታይ ቀናትዎ ያድጋሉ።', lTitle:'ለሁሉም የተሠራ', lSub:'Cunto AI ቋንቋዎን ይናገራል እና ምግብዎን ያውቃል፣ ከጆሎፍ እና እንጀራ እስከ ፒዛ እና ሱሺ።', bTitle:'በቅርቡ በ iPhone ላይ', bSub:'ሲወጣ ማወቅ ይፈልጋሉ? መልዕክት ይላኩልን፣ አንድ ጊዜ ኢሜይል እንልክልዎታለን።', bCta:'አሳውቁኝ', privacy:'የግላዊነት መመሪያ', terms:'የአጠቃቀም ውሎች' },
+  fr: { navFeatures:'Fonctionnalités', navHow:'Comment ça marche', navLang:'Langues', navSupport:'Assistance', headline:'Photographie ton repas. Obtiens les calories instantanément.', sub:'Fonctionne avec n’importe quel plat, de n’importe quelle cuisine — fait maison, au restaurant ou emballé. Cunto AI le reconnaît sur une photo et suit calories, protéines, glucides et lipides selon un plan conçu pour toi.', cta:'Bientôt sur l’App Store', trust:'3 jours d’essai gratuit · Annulable à tout moment', wayScan:'Scanner un plat', wayBarcode:'Code-barres', wayDescribe:'Décrire', mockLeft:'Calories restantes', mockProtein:'Protéines', mockCarbs:'Glucides', mockFat:'Lipides', mockMeal:'Riz à la viande', mockMeal2:'Salade de poulet', mockHome:'Accueil', mockProgress:'Progrès', mockSearch:'Recherche', mockProfile:'Profil', fTitle:'Tout ce qu’il te faut, rien de plus', fSub:'Conçu pour être ouvert chaque jour : rapide à remplir, clair à lire, honnête sur les chiffres.', f1:'Reconnaissance photo', f1b:'Vise ton assiette. L’IA nomme le plat et estime calories et macros pour la portion visible.', f2:'Codes-barres et mots', f2b:'Scanne un produit emballé, ou écris ce que tu as mangé dans ta langue quand il n’y a pas de photo à prendre.', f3:'Un plan conçu pour toi', f3b:'Réponds à sept questions rapides et obtiens un objectif quotidien de calories et de macros adapté à ton but.', f4:'Des progrès qui motivent', f4b:'Courbe de poids, nutrition hebdomadaire, série quotidienne et badges à débloquer en chemin.', f5:'Six langues', f5b:'Anglais, somali, swahili, amharique, français et arabe, avec nombres et dates au bon format.', f6:'Privé par conception', f6b:'Tes données restent sur ton téléphone. Crée un compte seulement pour une sauvegarde. Supprime tout en un geste.', hTitle:'Comment ça marche', hSub:'Trois étapes, une dizaine de secondes.', h1:'Photographie', h1b:'Appuie sur + et prends ton repas en photo.', h2:'Vérifie', h2b:'Regarde le plat, les calories et les macros. Ajuste les portions si besoin.', h3:'Enregistre', h3b:'Un geste et c’est sauvegardé. Tes anneaux se mettent à jour et ta série grandit.', lTitle:'Fait pour tout le monde', lSub:'Cunto AI parle ta langue et connaît ta cuisine, du jollof et de l’injera à la pizza et aux sushis.', bTitle:'Bientôt sur iPhone', bSub:'Tu veux savoir quand il sort ? Envoie-nous un mot et on t’écrit une fois.', bCta:'Prévenez-moi', privacy:'Politique de confidentialité', terms:'Conditions d’utilisation' },
+  ar: { navFeatures:'المزايا', navHow:'كيف يعمل', navLang:'اللغات', navSupport:'الدعم', headline:'صوّر طعامك واعرف سعراته فورًا.', sub:'يعمل مع أي طبق من أي مطبخ — منزلي أو من المطعم أو معلّب. يتعرف Cunto AI عليه من صورة ويتابع السعرات والبروتين والكربوهيدرات والدهون وفق خطة مصممة لك.', cta:'قريبًا على App Store', trust:'تجربة مجانية لمدة 3 أيام · ألغِ في أي وقت', wayScan:'صوّر الطبق', wayBarcode:'الباركود', wayDescribe:'صفه بكلمات', mockLeft:'السعرات المتبقية', mockProtein:'بروتين', mockCarbs:'كربوهيدرات', mockFat:'دهون', mockMeal:'أرز باللحم', mockMeal2:'سلطة دجاج', mockHome:'الرئيسية', mockProgress:'التقدم', mockSearch:'بحث', mockProfile:'حسابي', fTitle:'كل ما تحتاجه، ولا شيء زائد', fSub:'صُمم ليُفتح كل يوم: تسجيل سريع، قراءة واضحة، وأرقام صادقة.', f1:'التعرف من الصورة', f1b:'وجّه الكاميرا إلى طبقك. يسمّي الذكاء الاصطناعي الطبق ويقدّر السعرات والعناصر للكمية التي يراها.', f2:'باركود وكلمات', f2b:'امسح منتجًا معلّبًا، أو اكتب ما أكلته بلغتك عندما لا توجد صورة.', f3:'خطة مصممة لك', f3b:'أجب عن سبعة أسئلة سريعة واحصل على هدف يومي للسعرات والعناصر يناسب غايتك.', f4:'تقدم يحفّزك', f4b:'منحنى الوزن، التغذية الأسبوعية، سلسلة يومية وشارات تكسبها في الطريق.', f5:'ست لغات', f5b:'الإنجليزية والصومالية والسواحلية والأمهرية والفرنسية والعربية، بأرقام وتواريخ بالشكل الذي تتوقعه.', f6:'خصوصية من الأساس', f6b:'بياناتك على هاتفك. أنشئ حسابًا فقط إن أردت نسخة احتياطية. احذف كل شيء بضغطة واحدة.', hTitle:'كيف يعمل', hSub:'ثلاث خطوات، نحو عشر ثوانٍ.', h1:'صوّر', h1b:'اضغط زر + والتقط صورة لوجبتك.', h2:'تحقق', h2b:'شاهد الطبق والسعرات والعناصر. عدّل الكمية إن لزم.', h3:'سجّل', h3b:'ضغطة واحدة تحفظها. تتحدث حلقاتك وتنمو سلسلتك.', lTitle:'للجميع', lSub:'يتحدث Cunto AI لغتك ويعرف طعامك، من الجولوف والإنجيرا إلى البيتزا والسوشي.', bTitle:'قريبًا على iPhone', bSub:'تريد أن تعرف موعد الإطلاق؟ أرسل لنا رسالة وسنراسلك مرة واحدة.', bCta:'أعلمني', privacy:'سياسة الخصوصية', terms:'شروط الاستخدام' },
+};
+const defaults = {};
+document.querySelectorAll('[data-i]').forEach((el) => { defaults[el.dataset.i] = el.textContent; });
+function apply(code) {
+  const d = T[code] || {};
+  document.querySelectorAll('[data-i]').forEach((el) => { el.textContent = d[el.dataset.i] ?? defaults[el.dataset.i]; });
+  document.documentElement.lang = code;
+  document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
+  try { localStorage.setItem('lang', code); } catch {}
+}
+const sel = document.getElementById('lang');
+let start = 'en';
+try { start = localStorage.getItem('lang') || (navigator.language || 'en').slice(0, 2); } catch {}
+if (!T[start]) start = 'en';
+sel.value = start; apply(start);
+sel.addEventListener('change', () => apply(sel.value));
+</script>
+</body>
 </html>
